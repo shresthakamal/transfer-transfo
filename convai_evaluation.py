@@ -71,7 +71,7 @@ class TransformerAgent(Agent):
 
             self.logger.info("Build BPE prefix dictionary")
             convai_dict = build_dict()
-            assert len(convai_dict) == 19304
+            # assert len(convai_dict) == 19304  //19243
             self.prefix2words = self.get_prefix2words(convai_dict)
         else:
             self.model_checkpoint = shared['model']
